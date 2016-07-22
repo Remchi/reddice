@@ -24,6 +24,7 @@
   "dependencies": {
     "axios": "^0.12.0",
     "bcrypt": "^0.8.7",
+    "bluebird": "^3.4.1",
     "body-parser": "^1.15.2",
     "bookshelf": "^0.10.0",
     "classnames": "^2.2.5",
