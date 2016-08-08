@@ -39,22 +39,22 @@ class SignupForm extends React.Component {
   }
 
   checkUserExists(e) {
-    // const field = e.target.name;
-    // const val = e.target.value;
-    // if (val !== '') {
-    //   this.props.isUserExists(val).then(res => {
-    //     let errors = this.state.errors;
-    //     let invalid;
-    //     if (res.data.user) {
-    //       errors[field] = 'There is user with such ' + field;
-    //       invalid = true;
-    //     } else {
-    //       errors[field] = '';
-    //       invalid = false;
-    //     }
-    //     this.setState({ errors, invalid });
-    //   });
-    // }
+    const field = e.target.name;
+    const val = e.target.value;
+    if (val !== '') {
+      this.props.isUserExists(val).then(res => {
+        let errors = this.state.errors;
+        let invalid;
+        if (res.data.user) {
+          errors[field] = 'There is user with such ' + field;
+          invalid = true;
+        } else {
+          errors[field] = '';
+          invalid = false;
+        }
+        this.setState({ errors, invalid });
+      });
+    }
   }
 
   onSubmit(e) {
