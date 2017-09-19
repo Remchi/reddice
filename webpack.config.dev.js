@@ -29,6 +29,6 @@ export default {
     ]
   },
   resolve: {
-    extentions: [ '', '.js' ]
+    extensions: [ '', '.js' ]
   }
 }
